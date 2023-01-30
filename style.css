@@ -1,0 +1,135 @@
+* {
+  box-sizing: border-box;
+  padding: 0px;
+  margin: 0px;
+}
+
+:root {
+  font-size: 62.5%;
+}
+
+.hide {
+  display: none;
+}
+
+body {
+  font-size: 1.6rem;
+
+  background: linear-gradient(45deg, #190361, #bb00ff);
+	animation: gradient 10s ease infinite;
+  background-size: 200% 200%;
+
+  display: grid;
+  place-items: center;
+  height: 100vh;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+main {
+  background: #FFFFFF;
+  padding: 4.8rem 6.4rem 6.4rem;
+  box-shadow: 0px 2rem 5rem rgba(0, 0, 0, 0.8);
+  border-radius: .5rem;
+  text-align: center;
+  width: 43rem;
+}
+
+/* Screen1 */
+
+main h1 {
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-size: 2.4rem;
+  line-height: 2.9rem;
+
+  color: #34355B;
+
+  margin-bottom: 0.7rem;
+}
+
+main p {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 1.5rem;
+  line-height: 2rem;
+  
+  color: #34355B;
+  margin-bottom: 2rem;
+}
+
+#image:hover {
+  animation: animação .2s ease infinite;
+}
+
+@keyframes animação {
+  0%{
+    transform: translateX(5px);
+}
+  25%{
+     transform: translateY(3px); 
+}
+    50%{
+      transform: translateX(0px);
+}
+  75% {
+    transform: translateY(-5px);
+}
+  100%{
+    transform: translateX(-3px); 
+
+}
+
+}
+
+/* Screen2 */
+
+.sorte p {
+  font-family: 'Dancing Script', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 2.4rem;
+  line-height: 2.9rem;
+
+  color: #000000;
+}
+
+.sorte {
+  background: #E4EDF1;
+  box-shadow: 2px 2px 2px rgba(85, 85, 85, 0.5);
+  width: 30rem;
+
+  margin: 1.7rem 0 1.7rem;
+}
+
+button {
+  font-family: 'DM Sans', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 20px;
+  color: #FFFFFF;
+
+  background: #FF9500;
+  border-radius: 4px;
+  border: none;
+
+  padding: 1.6rem;
+  margin-top: 1.7rem;
+
+  transition: background .3s;
+}
+
+button:hover {
+  background: #b16a07;
+  transform: scale(1.03);
+}
